@@ -1,0 +1,85 @@
+body{
+background-color: grey
+
+}
+div{
+
+
+
+}
+
+
+.tile{
+	 width: 5%;
+    height: 60px;
+    color:red;
+
+}
+
+
+.turn_keeper{
+
+	
+}
+
+.black_piece{
+	color: red;
+	 width: 5%;
+    height: 60px;
+
+}
+
+.red_piece{
+	 width: 5%;
+    height: 60px;
+	color: red;
+
+
+}
+
+.black_king{
+	 width: 5%;
+    height: 60px;
+}
+
+.red_king{
+	 width: 5%;
+    height: 60px;
+}
+
+
+
+
+.row{
+
+	
+
+}
+.row1{
+	
+
+}
+.row2{
+	
+	
+}
+.row3{
+	
+
+}
+.row4{
+	
+
+}	
+.row5{
+	
+}
+
+.row6{
+	
+	
+}
+
+.row7{
+	
+}
