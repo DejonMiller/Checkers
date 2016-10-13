@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- view-source:http://www.mauriziopz.eu/from0togame/examples/05_Checkers.html -->
+
+<html>
+
+<head>
+
+
+<html lang="en">
+
+		<link rel="stylesheet" href="/style/styles.css" />
+
+	<title>Assignment 3: Checkers</title>
+
+    <script language= "javascript" src="/javascript/my.js">
+    
+</script>
+
+
+</head>
+
+
+<body
+
+ style="text-align:center" >
+
+ <h1> Checkers </h1>
+
+<p  id = "turn_keeper"> x moves first </p>
+<br>
+ 
+
+
+
+<div class ="row">
+
+
+        <INPUT id="b00" class ="black_piece" TYPE="button" style="background-color:#000000" Value="X" onClick="move(0,0)" onclick= "createTable()"  
+        span<>
+        <INPUT id="b10" class ="tile" TYPE="button" style="background-color:#FF0000" Value="  ">
+        <INPUT id="b20" class ="black_piece" TYPE="button" style="background-color:#000000" Value="X" onClick="move(2,0)">
+        <INPUT id="b30" class ="tile" TYPE="button" style="background-color:#FF0000" Value="  ">
+        <INPUT id="b40" class ="black_piece" TYPE="button" style="background-color:#000000" Value="X" onClick="move(4,0)">
+        <INPUT id="b50" class ="tile" TYPE="button" style="background-color:#FF0000" Value="  " >
+        <INPUT id="b60" class ="black_piece"  TYPE="button" style="background-color:#000000" Value="X" onClick="move(6,0)">
+        <INPUT id="b70" class ="tile" TYPE="button" style="background-color:#FF0000" Value="  "  >
+      </div>
+
+<div class ="row1">
+        <INPUT id="b01"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  "   >
+        <INPUT id="b11"  class ="black_piece"  TYPE="button" style="background-color:#000000" Value="X" onClick="move(1,1)">
+        <INPUT id="b21"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  "   >
+        <INPUT id="b31"  class ="black_piece" TYPE="button" style="background-color:#000000" Value="X" onClick="move(3,1)">
+        <INPUT id="b41"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  "  >
+        <INPUT id="b51"  class ="black_piece" TYPE="button" style="background-color:#000000" Value="X" onClick="move(5,1)">
+        <INPUT id="b61"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  "   >
+        <INPUT id="b71"  class ="black_piece"  TYPE="button" style="background-color:#000000" Value="X" onClick="move(7,1)">
+      </div>
+
+       <div class ="row2">
+        <INPUT id="b02"  class ="black_piece"  TYPE="button" style="background-color:#000000" Value="X" onClick="move(0,2)">
+        <INPUT id="b12"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  "   >
+        <INPUT id="b22"  class ="black_piece" TYPE="button" style="background-color:#000000" Value="X" onClick="move(2,2)">
+        <INPUT id="b32"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  "   >
+        <INPUT id="b42"  class ="black_piece" TYPE="button" style="background-color:#000000" Value="X" onClick="move(4,2)">
+        <INPUT id="b52"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  "   >
+        <INPUT id="b62"  class ="black_piece" TYPE="button" style="background-color:#000000" Value="X" onClick="move(6,2)">
+        <INPUT id="b72"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  "   >
+      </div>
+
+<div class ="row3">
+        <INPUT id="b03"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  ">
+        <INPUT id="b13"  class ="tile" TYPE="button" style="background-color:#000000" Value="  " onClick="move(1,3)">
+        <INPUT id="b23"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  " >
+        <INPUT id="b33"  class ="tile" TYPE="button" style="background-color:#000000" Value="  " onClick="move(3,3)">
+        <INPUT id="b43"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  " >
+        <INPUT id="b53"  class ="tile" TYPE="button" style="background-color:#000000" Value="  " onClick="move(5,3)">
+        <INPUT id="b63"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  " >
+        <INPUT id="b73"  class ="tile" TYPE="button" style="background-color:#000000" Value="  " onClick="move(7,3)">
+      </div>
+
+<div class ="row4">
+        <INPUT id="b04"  class ="tile" TYPE="button" style="background-color:#000000" Value="  " onClick="move(0,4)">
+        <INPUT id="b14"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  " >
+        <INPUT id="b24"  class ="tile" TYPE="button" style="background-color:#000000" Value="  " onClick="move(2,4)">
+        <INPUT id="b34"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  " >
+        <INPUT id="b44"  class ="tile" TYPE="button" style="background-color:#000000" Value="  " onClick="move(4,4)">
+        <INPUT id="b54"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  " >
+        <INPUT id="b64"  class ="tile" TYPE="button" style="background-color:#000000" Value="  " onClick="move(6,4)">
+        <INPUT id="b74"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  " >
+      </div>
+
+<div class ="row5">
+        <INPUT id="b05"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  ">
+        <INPUT id="b15"  class ="red_piece" TYPE="button" style="background-color:#000000" Value="O" onClick="move(1,5)">
+        <INPUT id="b25"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  ">
+        <INPUT id="b35"  class ="red_piece" TYPE="button" style="background-color:#000000" Value="O" onClick="move(3,5)">
+        <INPUT id="b45"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  ">
+        <INPUT id="b55"  class ="red_piece" TYPE="button" style="background-color:#000000" Value="O" onClick="move(5,5)">
+        <INPUT id="b65"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  ">
+        <INPUT id="b75"  class ="red_piece" TYPE="button" style="background-color:#000000" Value="O" onClick="move(7,5)">
+      </div>
+
+<div class ="row6">
+        <INPUT id="b06"  class ="red_piece" TYPE="button" style="background-color:#000000" Value="O" onClick="move(0,6)">
+        <INPUT id="b16"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  " >
+        <INPUT id="b26" class ="red_piece" TYPE="button" style="background-color:#000000" Value="O" onClick="move(2,6)">
+        <INPUT id="b36"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  ">
+        <INPUT id="b46"  class ="red_piece" TYPE="button" style="background-color:#000000" Value="O" onClick="move(4,6)">
+        <INPUT id="b56"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  " >
+        <INPUT id="b66"  class ="red_piece" TYPE="button" style="background-color:#000000" Value="O" onClick="move(6,6)">
+        <INPUT id="b76"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  ">
+      </div>
+
+<div class ="row7">
+        <INPUT id="b07"  class ="tile" TYPE="button" style="background-color:#FF0000"  Value="  " >
+        <INPUT id="b17"  class ="red_piece" TYPE="button" style="background-color:#000000" Value="O" onClick="move(1,7)">
+        <INPUT id="b27"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  " >
+        <INPUT id="b37"  class ="red_piece" TYPE="button" style="background-color:#000000" Value="O" onClick="move(3,7)">
+        <INPUT id="b47"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  " >
+        <INPUT id="b57"  class ="red_piece" TYPE="button" style="background-color:#000000" Value="O" onClick="move(5,7)">
+        <INPUT id="b67"  class ="tile" TYPE="button" style="background-color:#FF0000" Value="  ">
+        <INPUT id="b77"  class ="red_piece" TYPE="button" style="background-color:#000000" Value="O" onClick="move(7,7)">
+      </div>     
+
+
+
+
+</body>
+
+
+
+
+</html>
